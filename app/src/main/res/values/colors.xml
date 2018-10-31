@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <array name="colorPagesViewPager">
+        <item>#EDD9CF</item>
+        <item>#BED4D6</item>
+        <item>#ADCEB7</item>
+        <item>#F7CF8B</item>
+        <item>#FD96A2</item>
+    </array>
+
+    <color name="darkOcher">#ee726c</color>
+    <color name="mediumDarkOcher">#f18883</color>
+    <color name="lightDarkOcher">#f39e9a</color>
+    <color name="Ocher">#f6b4b1</color>
+    <color name="mediumLightOcher">#f9cac8</color>
+    <color name="lightOcher">#fbd3d1</color>
+
+</resources>

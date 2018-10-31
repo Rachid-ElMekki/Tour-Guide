@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppGeo</string>
+    <string name="title_activity_maps">MarrakechGeo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="choices">
+        <item>Tout</item>
+        <item>Jour</item>
+        <item>Nuit</item>
+    </string-array>
+    <string name="CallPolice">Appeler la police</string>
+    <string name="CallAmb">Appeler une ambulance</string>
+    <string name="CallTaxi">Apperl un taxi</string>
+    <string name="TxtAddDesc">Pour ajouter un monument veuillez remplir les champs suivant:</string>
+    <string name="TxtNamePlace">Nom du monument</string>
+    <string name="TxtDescPlace">Description:</string>
+    <string name="RadioDay">Jour</string>
+    <string name="RadioNight">Nuit</string>
+    <string name="AddImageButton">A\nj\no\nu\nt\ne\nr</string>
+    <string name="AddButton">Ajouter</string>
+    <string name="ViewWTD">Que faire?</string>
+    <string name="ViewMap">Carte</string>
+    <string name="ViewParamHelp">Parametre et Aide</string>
+    <string name="modify">Modifier</string>
+    <string name="delete">Supprimer</string>
+    <string name="modifM">Modification de l\'entrée</string>
+    <string name="ModifyButton">Modifier</string>
+    <string name="ModifyImage">Modifier l\'image</string>
+    <string name="BetterAtType">Meilleur durant</string>
+    <string name="txtConfirmation">Entrée ajoutée !</string>
+    <string name="delImages">E\nf\nf\na\nc\ne\nr</string>
+</resources>

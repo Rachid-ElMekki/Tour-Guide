@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">GeoApp</string>
+    <string name="title_activity_maps">GeoMarrakech</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="choices">
+        <item>All</item>
+        <item>Day</item>
+        <item>Night</item>
+    </string-array>
+    <string name="CallPolice">Call police</string>
+    <string name="CallAmb">Call an ambulance</string>
+    <string name="CallTaxi">Call a cab</string>
+    <string name="TxtAddDesc">To add new places fill the following form:</string>
+    <string name="TxtNamePlace">Place\'s name:</string>
+    <string name="TxtDescPlace">Description:</string>
+    <string name="RadioDay">Day</string>
+    <string name="RadioNight">Night</string>
+    <string name="AddImageButton">A\nd\nd</string>
+    <string name="AddButton">Add</string>
+    <string name="ViewWTD">What to do?</string>
+    <string name="ViewMap">Map</string>
+    <string name="ViewParamHelp">Settings and Help</string>
+    <string name="modify">Modify</string>
+    <string name="delete">Delete</string>
+    <string name="modifM">Modifying place</string>
+    <string name="ModifyButton">Modify</string>
+    <string name="ModifyImage">Modify image</string>
+    <string name="BetterAtType">Better at</string>
+    <string name="txtConfirmation">Entry added successfully !</string>
+    <string name="delImages">D\ne\nl\ne\nt\ne</string>
+</resources>

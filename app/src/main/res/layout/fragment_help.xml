@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_page_rootview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.testmap.Controlers.Fragments.HelpFragment"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/callTaxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#dd9ef075"
+        android:drawableLeft="@drawable/taxi"
+        android:padding="16dp"
+        android:text="@string/CallTaxi"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/callAmbulance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/callTaxi"
+        android:background="@drawable/background_del_button"
+        android:drawableLeft="@drawable/hospital"
+        android:padding="16dp"
+        android:text="@string/CallAmb"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/callPolice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/callAmbulance"
+        android:background="#6ac2f8"
+        android:drawableLeft="@drawable/security"
+        android:padding="16dp"
+        android:text="@string/CallPolice"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/callPolice"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="201dp"
+                android:text="@string/TxtAddDesc"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/NomMonument"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/TxtNamePlace" />
+
+
+                <EditText
+                    android:id="@+id/nom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/descriptionMonument"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="0.3"
+                    android:text="@string/TxtDescPlace" />
+
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:background="#ffffff"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/jour"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/BetterAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/BetterAtType" />
+
+                <RadioButton
+                    android:id="@+id/jour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/RadioDay" />
+
+                <RadioButton
+                    android:id="@+id/nuit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/RadioNight" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/layoutAddImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/addImage"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:background="@drawable/background_addimg_button"
+                    android:text="@string/AddImageButton" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95">
+
+                    <LinearLayout
+                        android:id="@+id/linearlayoutFragHelp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/nophoto" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <Button
+                    android:id="@+id/delImagesHelp"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05"
+                    android:background="@drawable/background_addimg_button"
+                    android:text="@string/delImages" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+
+            <Button
+                android:id="@+id/addEnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_buttons"
+                android:text="@string/AddButton" />
+
+            <TextView
+                android:id="@+id/txtConfirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="102dp"
+                android:text="@string/txtConfirmation"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
